@@ -1,13 +1,12 @@
 const mongoose = require('mongoose');
 
 const EnquirySchema = new mongoose.Schema({
-  businessName: { type: String, required: true },
-  contactPerson: { type: String, required: true },
-  phone: { type: String, required: true },
-  gst: { type: String },
-  volume: { type: String, required: true },
-  product: { type: String },
-  status: { type: String, default: 'Pending', enum: ['Pending', 'Contacted', 'Closed'] },
+  name:    { type: String, required: true },
+  email:   { type: String, required: true },
+  phone:   { type: String, default: '' },
+  product: { type: String, default: '' },
+  msg:     { type: String, required: true },
+  status:  { type: String, default: 'new', enum: ['new', 'replied', 'closed'] },
 }, { timestamps: true });
 
 module.exports = mongoose.model('Enquiry', EnquirySchema);
