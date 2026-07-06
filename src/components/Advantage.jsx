@@ -86,12 +86,6 @@ export default function Advantage() {
       description: 'Stringent quality checks ensure every batch meets the same high standard your customers expect.'
     },
     {
-      illustration: <TradePricing />,
-      image: '/pricing_bg.png',
-      title: 'Trade Pricing',
-      description: 'Highly competitive wholesale margins designed specifically to maximize retailer profitability.'
-    },
-    {
       illustration: <ReliableSupply />,
       image: '/supply_bg.png',
       title: 'Reliable Supply',
@@ -99,7 +93,7 @@ export default function Advantage() {
     },
     {
       illustration: <DedicatedSupport />,
-      image: '/support_bg.png',
+      image: '/customer_support_bg.png',
       title: 'Dedicated Support',
       description: 'A dedicated account manager for your bulk orders, logistics tracking, and post-sales queries.'
     }
@@ -131,7 +125,7 @@ export default function Advantage() {
           <h2 className="font-headline-md text-headline-md text-on-surface">The SRR Wholesale Advantage</h2>
         </motion.div>
         <motion.div 
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"

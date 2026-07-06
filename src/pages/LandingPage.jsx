@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import TrustBar from '../components/TrustBar';
-import AboutUs from '../components/AboutUs';
 import SupplyMap from '../components/SupplyMap';
 import Categories from '../components/Categories';
 import Advantage from '../components/Advantage';
@@ -50,7 +49,6 @@ export default function LandingPage() {
       <Header onOpenEnquiry={() => handleEnquiry('Price List & Brochure Request')} />
       <Hero onOpenEnquiry={() => handleEnquiry('Dealer Program Enrollment')} />
       <TrustBar />
-      <AboutUs />
       <SupplyMap />
       <Categories onOpenEnquiry={handleEnquiry} />
       <Advantage />

@@ -840,7 +840,7 @@ document.querySelectorAll('.faq-q').forEach(q=>{
 });
 
 // ENQUIRY FORM — sends to MongoDB via backend API
-const API = 'http://localhost:5000/api';
+const API = '/api';
 
 document.getElementById('enq-submit').addEventListener('click', async () => {
   const name    = document.getElementById('enq-name').value.trim();
